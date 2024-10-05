@@ -33,10 +33,16 @@ public class SampleOpMode extends OpMode {
 
     // CLASS CONSTANTS
 
-    public static final double MID_SERVO   =  0.5 ;
-    public static final double CLAW_SPEED  = 0.02 ;        // sets rate to move servo
-    public static final double ARM_UP_POWER    =  0.50 ;   // Run arm motor up at 50% power
-    public static final double ARM_DOWN_POWER  = -0.25 ;   // Run arm motor down at -25% power
+    // Setting the "middle" position on the serv0
+    public static final double MID_SERVO   =  0.5;
+
+    // Setting the speed at which the claw moves
+    public static final double CLAW_SPEED  = 0.02;
+
+    // Power for the arm up and down (compared to the full power of
+    // the motor at 1.0)
+    public static final double ARM_UP_POWER    =  0.50;
+    public static final double ARM_DOWN_POWER  = -0.25;
 
     /*
      * This is an method that is inherited from the OpMode parent class. This will run
